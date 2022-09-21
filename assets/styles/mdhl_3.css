@@ -222,3 +222,11 @@ td {
   text-align: center;
   padding-bottom: 2vh;
 }
+.email{
+  text-decoration: none;
+  color: aliceblue;
+}
+.email:hover{
+  text-decoration: 1px blue solid underline ;
+  color: blue;
+}
