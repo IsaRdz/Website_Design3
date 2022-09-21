@@ -36,9 +36,10 @@ header {
   font-weight: bold;
 }
 .title {
-  margin-top: 20px;
-  padding-left: 80px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
   font-weight: bold;
+  text-align: center;
 }
 .logo {
   width: 10vw;
@@ -160,4 +161,64 @@ button {
   padding: 0.5em;
   border-radius: 5px;
   box-shadow: 2px 2px 2px #fbe32c;
+}
+
+.underline {
+  font-style: italic;
+  text-decoration-line: underline;
+  text-decoration-color: black;
+  margin-bottom: 2vh;
+}
+.information {
+  margin-top: 5vh;
+  background-color: #000;
+  color: whitesmoke;
+  box-shadow: 3px 3px 3px gray;
+  border-radius: 0.5em;
+  padding: 2vw;
+}
+.one-line {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3vh;
+}
+.information > p {
+  padding-bottom: 1vh;
+}
+.contact-name {
+  padding-top: 2vh;
+}
+table {
+  width: 60%;
+  margin: 0 auto;
+  padding: 2vw;
+  background-color: #000;
+  color: whitesmoke;
+  border-radius: 0.5em;
+  box-shadow: 3px 3px 3px gray;
+}
+th {
+  text-align: start;
+  color: #fbe32c;
+}
+th,
+td {
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+}
+.last-row{
+  border-collapse: collapse;
+  border-bottom: #fbe32c 1px solid;
+}
+.day {
+  text-align: center;
+}
+.section-games{
+  margin: 3vw;
+  padding-left: 7vw;
+  padding-right: 7vw;
+}
+.title-main{
+  text-align: center;
+  padding-bottom: 2vh;
 }
