@@ -170,12 +170,15 @@ button {
   margin-bottom: 2vh;
 }
 .information {
+  width: 90%;
+  margin: 0 auto;
   margin-top: 5vh;
   background-color: #000;
   color: whitesmoke;
   box-shadow: 3px 3px 3px gray;
   border-radius: 0.5em;
   padding: 2vw;
+  padding-left: 6vw;
 }
 .one-line {
   display: flex;
