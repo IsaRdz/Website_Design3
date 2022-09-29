@@ -155,12 +155,14 @@ textarea {
   height: 5em;
 }
 button {
-  margin-left: 22em;
+  display: inline-block;
+  justify-content: flex-end;
   background-color: #000;
   color: #fbe32c;
-  padding: 0.5em;
+  padding: 1vw;
   border-radius: 5px;
   box-shadow: 2px 2px 2px #fbe32c;
+  margin-left: 75%;
 }
 
 .underline {
@@ -233,14 +235,20 @@ td {
   text-decoration: 1px blue solid underline ;
   color: blue;
 }
-.form-registration {
+.container-personal-data,
+.container-school,
+.container-positions,
+.container-uniform,
+.container-permission
+ {
   margin: 0 auto;
-  width: 80%;
-  padding: 2em 1em 2em 1em;
+  width: 70%;
+  padding: 6vh 4vw 5vh 6vw;
   border-radius: 0.5em;
   box-shadow: 3px 3px 3px gray;
   background-color: black;
   color: aliceblue;
+  margin-bottom: 3vh;
 }
 
 .container-personal-data{
@@ -250,7 +258,9 @@ td {
   grid-auto-columns: auto;
 }
 
-.container-third-field, .container-eighth-field, .label-school{
+.container-third-field, 
+.container-eighth-field, 
+.label-school{
   grid-column-start: 1;
   grid-column-end: span 2;
 }
@@ -271,13 +281,24 @@ border-bottom: 1px solid;
 width: 15vw;
 border: none;
 border-bottom: 1px solid;
-
 }
-
 .container-sixth-field > input,
 .container-signature > label > input
 {
   text-align: center;
+}
+.container-seventh-field > input,
+.container-eighth-field > input,
+.container-school > label > input,
+.container-positions > label > input,
+.container-uniform > label > input
+{
+  width: auto;
+  box-sizing: border-box;
+  border: 1px solid #fbe32c;
+  background-color: #fbe32c;
+  border-radius: 2px;
+  margin-left: 1.5vw;
 }
 
 .container-eighth-field{
@@ -293,14 +314,11 @@ border-bottom: 1px solid;
   grid-auto-columns: auto;
 }
 
-.container-eighth-field > input{
-  margin-left: 1.5vw;
-}
-
 .container-signature{
   display: grid;
   grid-template-columns: 80%;
   grid-gap: 15px;
+  margin-top: 2vh;
 }
 
 .container-signature > input{
@@ -312,7 +330,14 @@ border-bottom: 1px solid;
   text-indent: 0px;
 }
 
-form > h3{
+form > section > h3{
+  grid-column-start: 1;
+  grid-column-end: span 2;
   padding-bottom: 2vh;
+  color: #fbe32c;
 }
 
+.btn-send{
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
