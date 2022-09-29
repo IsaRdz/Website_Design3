@@ -110,7 +110,7 @@ span {
   margin-left: 10px;
   margin-top: 1vw;
 }
-form {
+.form-contact {
   margin: 0 auto;
   width: 500px;
   padding: 2em 1em 2em 1em;
@@ -132,11 +132,11 @@ ul {
 form li + li {
   margin-top: 1em;
 }
-label {
+.contact-label {
   display: inline-block;
   width: 90px;
   text-align: right;
-  padding-right: 1em;
+  padding-right: 1vw;
 }
 input,
 textarea {
@@ -233,3 +233,86 @@ td {
   text-decoration: 1px blue solid underline ;
   color: blue;
 }
+.form-registration {
+  margin: 0 auto;
+  width: 80%;
+  padding: 2em 1em 2em 1em;
+  border-radius: 0.5em;
+  box-shadow: 3px 3px 3px gray;
+  background-color: black;
+  color: aliceblue;
+}
+
+.container-personal-data{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 15px;
+  grid-auto-columns: auto;
+}
+
+.container-third-field, .container-eighth-field, .label-school{
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
+
+.container-third-field > input,
+.container-signature > input{
+width: 71%;
+border: none;
+border-bottom: 1px solid;
+}
+.container-first-field > input, 
+.container-second-field > input,
+.container-fourth-field > input,
+.container-fifth-field > input,
+.container-sixth-field > input,
+.container-signature > label > input 
+{
+width: 15vw;
+border: none;
+border-bottom: 1px solid;
+
+}
+
+.container-sixth-field > input,
+.container-signature > label > input
+{
+  text-align: center;
+}
+
+.container-eighth-field{
+  margin-top: 1vh;
+}
+
+.container-school, 
+.container-positions, 
+.container-uniform{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 15px;
+  grid-auto-columns: auto;
+}
+
+.container-eighth-field > input{
+  margin-left: 1.5vw;
+}
+
+.container-signature{
+  display: grid;
+  grid-template-columns: 80%;
+  grid-gap: 15px;
+}
+
+.container-signature > input{
+  border: none;
+  border-bottom: 1px solid;
+}
+.p-registration{
+  padding-top: 1vh;
+  text-indent: 0px;
+}
+
+form > h3{
+  padding-bottom: 2vh;
+}
+
