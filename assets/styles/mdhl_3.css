@@ -23,6 +23,7 @@ header {
   justify-content: flex-start;
   height: 40px;
 }
+
 .menu a {
   margin-left: 50px;
   padding: 10px;
@@ -35,6 +36,12 @@ header {
   background-color: #fbe32c;
   font-weight: bold;
 }
+
+.active{
+  background-color: #4c7c7c;
+  font-weight: bold;
+}
+
 .title {
   margin-top: 2vh;
   margin-bottom: 2vh;
@@ -204,13 +211,14 @@ table {
   box-shadow: 3px 3px 3px gray;
 }
 th {
-  text-align: start;
+  text-align: center;
   color: #fbe32c;
 }
 th,
 td {
   padding-top: 0.5vh;
   padding-bottom: 0.5vh;
+  text-align: center;
 }
 .last-row {
   border-collapse: collapse;
@@ -378,21 +386,22 @@ form > section > h3 {
 #popupBody {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   width: 46%;
   padding: 2%;
   padding-top: 1px;
   border-radius: 15px;
   box-shadow: 0 0 5px #999;
-  color: #fbe32c;
-  background: black;
+  color: black;
+  background: #4c7c7c;
   margin: 0 auto;
   margin-top: 15vh;
-  transition: all 4s ease-in-out;
+  border: 2px solid #4c7c7c;
+  transition: all 2s ease-in-out;
 }
 
 #popupBody > h2{
-  padding-bottom: 3vh;
+  align-self: center;
 }
 
 #cerrar {
@@ -401,9 +410,18 @@ form > section > h3 {
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: #fbe32c;
+  color: black;
   transition: all 200ms;
 }
 td > a{
   margin-bottom: 10vh;
+}
+iframe{
+  width: 41vw;
+  height: 350px;
+  border-radius: 4px;
+}
+#popupBody > img{
+  width: 7vw;
+  margin-right: 15%;
 }
